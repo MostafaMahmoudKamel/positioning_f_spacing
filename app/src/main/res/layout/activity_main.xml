@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--parent view-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+>
+    <!-- first layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+
+        >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Text1  "
+        android:background="@color/backgroundColor"
+        android:textSize="@dimen/sizeDefult"
+        android:gravity="center"
+
+        android:lines="1"
+        android:ellipsize="end"
+        android:padding="30sp"
+
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/text2"
+        android:background="#0D8BC6"
+        android:textSize="25sp"
+        android:padding="30sp"
+        android:gravity="center"
+        android:layout_gravity=""
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Text3"
+        android:background="#9C27B0"
+        android:textSize="25sp"
+        android:padding="30sp"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    </LinearLayout>
+        <!--    second Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+       >
+<!--        text4 will take all part of layout_weight-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Text4"
+            android:textSize="25sp"
+            android:background="#CDDC39"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Text5"
+            android:background="#0A850F"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+<!--    third layout-->
+
+
+
+</LinearLayout> <!--end parent layout-->
